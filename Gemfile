@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-import'
+gem 'jekyll'
+gem 'jekyll-import', :git => 'https://github.com/joscarsson/jekyll-import.git', :branch => 'blogger-comments'
