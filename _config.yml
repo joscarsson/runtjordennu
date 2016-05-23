@@ -1,9 +1,8 @@
-# Site settings
 title: Runt jorden!
 email: jonas.osc@rsson.nu
 description: ""
 baseurl: "/runtjordennu"
 url: "http://joscarsson.github.io"
-
-# Build settings
 markdown: kramdown
+collections:
+  - comments
