@@ -12,4 +12,15 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="comment-content" itemprop="articleBody">
+    <ul class="post-list">
+      {% for comment in page.comments %}
+        <li>
+          {{ comment.author }}
+          {{ comment.content }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
 </article>
