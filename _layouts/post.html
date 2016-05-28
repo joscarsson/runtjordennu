@@ -2,19 +2,27 @@
 layout: default
 ---
 <div>
-  <span class="post-date">{{ page.date | localize: "%A, %B %d, %Y" }}</span>
+  <span class="post-date">{{ page.date | localize: "%A, %B %-d, %Y" }}</span>
   <h2>{{ page.title }}</h2>
-  <div class="post-content" itemprop="articleBody">
+  <div>
     {{ content }}
   </div>
-  <!-- <div class="comment-content" itemprop="articleBody">
-    <ul class="post-list">
-      {% for comment in page.comments %}
-        <li>
-          {{ comment.author }}
-          {{ comment.content }}
-        </li>
-      {% endfor %}
-    </ul>
-  </div> -->
+  <div class="post-footer">
+    <p>
+      Upplagd av {{ page.author }} kl. <span class="time">{{ page.date | localize: "%H:%M" }}</span><br/>
+    </p>
+    Etiketter: {{ page.tags | join: ', ' }}
+  </div>
+  <div>
+    <h2>{% if page.comments.size == 1 %}1 kommentar:{%else%}{{ page.comments | size }} kommentarer:{%endif%}</h2>
+    {% for comment in page.comments %}
+    <div class="comment">
+      <p>
+        <span class="author">{{ comment.author }}</span> <span class="time">{{ comment.date | localize: "%-d %B, %Y %H:%M" }}</span>
+      </p>
+
+      <p>{{ comment.content }}</p>
+    </div>
+    {% endfor %}
+  </div>
 </div>

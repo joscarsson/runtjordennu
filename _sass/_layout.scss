@@ -95,3 +95,26 @@ body {
   color: #222;
   font-weight: bold;
 }
+
+.post-footer {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  font-size: 11px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+
+  .time {
+    color: #888;
+  }
+}
+
+.comment {
+  .author {
+    font-weight: bold;
+  }
+
+  .time {
+    color: #cc1118;
+  }
+}
