@@ -2,7 +2,16 @@
 layout: default
 ---
 
-<div class="home">
+<ul class="post-index">
+  {% for post in site.posts %}
+    <li class="post-index-item">
+      <span>{{ post.date | localize: "%A, %B %d, %Y" }}</span>
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
@@ -20,4 +29,4 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</div> -->

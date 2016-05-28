@@ -4,5 +4,6 @@ description: ""
 baseurl: "/runtjordennu"
 url: "http://joscarsson.github.io"
 markdown: kramdown
+lang: "sv"
 collections:
   - comments
