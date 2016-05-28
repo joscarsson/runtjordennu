@@ -1,5 +1,8 @@
 .PHONY = deploy
 
+serve:
+	bundle exec jekyll serve
+
 deploy:
 	bundle exec jekyll build
 	git branch -D gh-pages
