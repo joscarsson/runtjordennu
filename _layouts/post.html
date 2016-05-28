@@ -14,7 +14,7 @@ layout: default
     Etiketter: {{ page.tags | join: ', ' }}
   </div>
   <div>
-    <h2>{% if page.comments.size == 1 %}1 kommentar:{%else%}{{ page.comments | size }} kommentarer:{%endif%}</h2>
+    <h2>{% if page.comments.size == 0 %}0 kommentarer{% elsif page.comments.size == 1 %}1 kommentar:{%else%}{{ page.comments | size }} kommentarer:{%endif%}</h2>
     {% for comment in page.comments %}
     <div class="comment">
       <p>
