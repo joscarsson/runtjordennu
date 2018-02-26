@@ -1,0 +1,133 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  padding-left: 30px; }
+
+body {
+  font: 400 12px/1.5 Verdana, Geneva, sans-serif;
+  color: #111;
+  background-color: #073763;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+h1 {
+  padding: 22px 30px;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  font-size: 60px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 14px; }
+
+a {
+  color: #cc1118;
+  text-decoration: none; }
+  a:hover {
+    color: #ff1a00;
+    text-decoration: underline; }
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center; }
+
+.center {
+  width: 920px;
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: 152px;
+  margin: 10px;
+  background: #cc1118 url(../images/gradient.png) repeat-x scroll 0 -400px; }
+
+.row {
+  display: flex;
+  margin: 10px;
+  flex: 1; }
+  .row .left {
+    flex: 1;
+    border-right: 1px solid #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .row .right {
+    display: flex;
+    width: 275px;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .row .right .us {
+      align-self: center;
+      padding: 2px;
+      border: 1px solid #eeeeee;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); }
+    .row .right .our-trip {
+      margin-top: 10px; }
+      .row .right .our-trip h4, .row .right .our-trip h5 {
+        font-size: 12px;
+        font-weight: bold; }
+      .row .right .our-trip p {
+        margin-top: 10px;
+        margin-bottom: 30px; }
+        .row .right .our-trip p.done {
+          text-decoration: line-through; }
+    .row .right .google-map {
+      align-self: center; }
+      .row .right .google-map img {
+        padding: 2px;
+        border: 1px solid #eeeeee;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); }
+
+.post-index {
+  list-style: none; }
+
+.post-index-item {
+  color: #bbb; }
+
+.post-date {
+  text-transform: uppercase;
+  color: #222;
+  font-weight: bold; }
+
+.post-footer {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  font-size: 11px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .post-footer .time {
+    color: #888; }
+
+.comment .author {
+  font-weight: bold; }
+.comment .time {
+  color: #cc1118; }
